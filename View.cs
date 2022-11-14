@@ -1,23 +1,6 @@
 ﻿using Coding_Tracker.models;
 using ConsoleTableExt;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Reflection.PortableExecutable;
-using System.Text;
-using System.Threading.Tasks;
-
-// TODO:
-// Update
-// Display tables with ConsoleExt
-// Remove
-// Display tables with ConsoleExt
-// Display 7 days
-// Display tables with ConsoleExt
-// Display date range
-// Display tables with ConsoleExt
-// Exit
 
 namespace Coding_Tracker
 {
@@ -62,6 +45,12 @@ namespace Coding_Tracker
                         break;
                     case MenuOption.Delete:
                         Delete();
+                        break;
+                    case MenuOption.Exit:
+                        Environment.Exit(0);
+                        break;
+                    case MenuOption.Invalid:
+                        GetUserInput("Invalid option. Please press any key to try again.");
                         break;
                 }
             }

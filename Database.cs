@@ -1,5 +1,4 @@
 ﻿using System.Configuration;
-using System.Collections.Specialized;
 using System.Data.SQLite;
 using Coding_Tracker.models;
 using System.Globalization;
